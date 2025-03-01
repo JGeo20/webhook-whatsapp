@@ -5,8 +5,8 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-WEBHOOK_VERIFY_TOKEN = os.getenv("WEBHOOK_VERIFY_TOKEN")
-GRAPH_API_TOKEN = os.getenv("GRAPH_API_TOKEN")
+WEBHOOK_VERIFY_TOKEN = os.getenv("1234")
+GRAPH_API_TOKEN = os.getenv("EAAg9azoNUlcBOxi7ljbuZC5p2a0iTjhnbva82XOyKsC3sCpdnGkzPSz6rwDhziwZCahewfJulpI6GV08ZCugyuZByDmyez5Wn9pDFfhkJJJiY0u2jB2PIWse8hFiUG3QpcsKBG0zTqlo65EZCx80OZAMZC9M0by9W3355uZCMdexaCgc7ZBT5l9KMNZBb5IKdOipe1WLI3cqdOUW1Sa4ZBZAoRsZACLtEu7IU")
 PORT = int(os.getenv("PORT", 5000))
 
 @app.route("/webhook", methods=["POST"])
